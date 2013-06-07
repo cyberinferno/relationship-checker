@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check your relationship</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<center>
+			<h1>Relationship Checker</h1>
+			<div id="errordiv" class="alert" style="display:none;width:200px;">
+				<button type="button" class="close" onclick="$(this).parent().fadeOut(&quot;slow&quot;)">x</button>
+				<span id="error-msg"></span>
+			</div>
+			<form id="checker-form" method="POST">
+				<input type="text" name="n1" id="n1" placeholder="Name 1"><br>
+				<input type="text" name="n2" id="n2" placeholder="Name 2"><br>
+				<button type="submit" class="btn btn-medium btn-inverse" id="check-btn">Check</button><br><br>
+			</form>
+			<div id="result-div" style="display:none;"></div>
+		</center>
+	</div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>	
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+	<script src="js/checker.min.js"></script>
+</body>
+</html>
